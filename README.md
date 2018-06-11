@@ -158,6 +158,17 @@ Try them all but this board can even host a webserver for instance:
 
 ## POTENTIAL PROBLEMS
 
+### OSX DRIVER
+
+If the board doesn't appear in Arduino for OSX, the follwoing links should help:
+
+[mblock.cc/docs/run-makeblock-ch340-ch341-on-mac-os-sierra](http://www.mblock.cc/docs/run-makeblock-ch340-ch341-on-mac-os-sierra)
+
+[github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver#ch340g-ch34g-ch34x-mac-os-x-driver](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver#ch340g-ch34g-ch34x-mac-os-x-driver)
+
+[https://sparks.gogo.co.nz/ch340.html](https://sparks.gogo.co.nz/ch340.html)
+
+
 
 ### UPLOAD ERROR
 
