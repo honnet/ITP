@@ -124,6 +124,16 @@ Note: the visualization is derived from the work by Andreas Schlegel, you can fi
 
 ### MORE CHALLENGES!
 
+#### Make noise
+
+- With Processing:
+
+[github.com/processing/processing-sound/blob/master/examples/Oscillators/SawWave/](https://github.com/processing/processing-sound/blob/master/examples/Oscillators/SawWave/)
+
+[github.com/processing/processing-sound/blob/master/examples/Demos/SineCluster/](https://github.com/processing/processing-sound/blob/master/examples/Demos/SineCluster)
+
+[github.com/processing/processing-sound/blob/master/examples/Effects/Filter/BPF](https://github.com/processing/processing-sound/blob/master/examples/Effects/Filter/BPF)
+
 - With Sonic Pi: [sonic-pi.net/tutorial.html#section-12-1](https://sonic-pi.net/tutorial.html#section-12-1)
 
 
@@ -132,6 +142,7 @@ Note: the visualization is derived from the work by Andreas Schlegel, you can fi
 - [github.com/adzialocha/osc-js](https://github.com/adzialocha/osc-js#example-osc-between-maxmsppdsc-etc-and-your-browser)
 
 - [github.com/genekogan/p5js-osc/tree/master/p5-basic](https://github.com/genekogan/p5js-osc/tree/master/p5-basic)
+
 
 #### Motion recognition
 
