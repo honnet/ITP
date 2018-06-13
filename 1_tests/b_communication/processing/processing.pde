@@ -12,8 +12,8 @@ OscP5 oscP5;
 void setup() {
   size(400,400);
   frameRate(250);
-  /* start oscP5, listening for incoming messages at port 9999 */
-  oscP5 = new OscP5(this,9999);
+  /* start oscP5, listening for incoming messages at port 4559 */
+  oscP5 = new OscP5(this,4559);
 }
 
 

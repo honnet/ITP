@@ -16,7 +16,7 @@ void setup() {
 
   smooth(8);
   hint(DISABLE_DEPTH_TEST);
-  osc = new OscP5(this, 9999);
+  osc = new OscP5(this, 4559);
   cp = new ControlP5(this);
 
   float y = height-40;

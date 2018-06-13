@@ -12,7 +12,7 @@ const IPAddress outIp(192,168,xx,xx); // TODO: remote IP of your computer
 
 
 const unsigned int localPort = 8888;  // local port to listen for OSC packets (not used for sending)
-const unsigned int outPort = 9999;    // remote port to receive OSC
+const unsigned int outPort = 4559;    // remote port to receive OSC
 WiFiUDP Udp;                          // A UDP instance to let us send and receive packets over UDP
 
 

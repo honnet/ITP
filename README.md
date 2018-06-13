@@ -124,6 +124,9 @@ Note: the visualization is derived from the work by Andreas Schlegel, you can fi
 
 ### MORE CHALLENGES!
 
+- With Sonic Pi: [sonic-pi.net/tutorial.html#section-12-1](https://sonic-pi.net/tutorial.html#section-12-1)
+
+
 #### Play with javascript
 
 - [github.com/adzialocha/osc-js](https://github.com/adzialocha/osc-js#example-osc-between-maxmsppdsc-etc-and-your-browser)
