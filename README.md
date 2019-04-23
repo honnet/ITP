@@ -1,5 +1,7 @@
 # Wireless and Tangible Interactive Media _at the era of the "Internet of Shit"_
 
+<img align="right" width="200" src="https://itp.nyu.edu/camp2018/images/session_photos/large/session_134.png">
+
 This repo contains Arduino and Processing code to control a visualization using:
 
 - an MPU-6050 motion sensor (with accel + gyro)
