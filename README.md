@@ -109,6 +109,7 @@ login/password, your IP address (look for `IPAddress outIp(192.168...)`), and up
 
 
 ### VISUALIZATION
+<img align="right" width="300" src="https://farm2.staticflickr.com/1784/42817121852_6db390bffd_z_d.jpg">
 
 Now that we can sense and communicate, let's use the data!
 
