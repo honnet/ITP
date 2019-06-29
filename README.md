@@ -18,18 +18,18 @@ This repo contains Arduino and Processing code to control a visualization using:
 0) If you don't have Arduino, download it:
 [arduino.cc/en/main/software](https://www.arduino.cc/en/main/software)
 
-1) If you don't use Linux, you need drivers:
+1) If you use Mac or Windows, you need drivers:
 [wiki.wemos.cc/downloads](https://wiki.wemos.cc/downloads)
 
 2) If you never used ESP8266 with your Arduino IDE you need to follow this procedure:
 
-[github.com/esp8266/Arduino#installing-with-boards-manager](https://github.com/esp8266/Arduino#installing-with-boards-manager)
+[github.com/esp8266/Arduino#installing-with-boards-manager](https://github.com/esp8266/Arduino#installing-with-boards-manager) (but you can stop before the "Using git version", unless you want to contribute to their work).
 
 3) If you never used the MPU-6050 or OSC in Arduino, use the following keywords in the Library Manager:
 
- - MPU6050
+ - *MPU6050_tockn*
 
- - Open Sound Control (osc) by Adrian Freed and Yotam Mann
+ - *OSC (Open Sound Control)* by Adrian Freed and Yotam Mann
 
 It will allow you to install these libraries, here is the procedure:
 
@@ -40,15 +40,11 @@ It will allow you to install these libraries, here is the procedure:
 
 0) If you don't have it, download Processing: [processing.org/download](https://processing.org/download)
 
-1) As in the Arduino section, install the following libraries with the Library Manager:
+1) As in the Arduino section, go to `Sketch -> Import Library... -> Add Library...` to install the following libraries:
 
- - oscP5 by Andreas Schlegel
+ - *oscP5* by Andreas Schlegel
 
- - controlP5 by Andreas Schlegel
-
-Procedure:
-
-[github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library](https://github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library)
+ - *controlP5* by Andreas Schlegel
 
 
 ## USAGE
@@ -57,7 +53,7 @@ Procedure:
 
 0) Close the Arduino IDE, unplug and replug your Wemos board, then re-open the Arduino IDE (it can help for many problems)
 
-1) Select the port at the bottom of the list `Tools -> Port` (or the latest at least), it looks like:
+1) Select the port *at the bottom of the list* of `Tools -> Port` (or the latest that appeared at least), it looks like:
 
  - OS X: /dev/cu...
 
@@ -65,12 +61,14 @@ Procedure:
 
  - Win: COM...
 
-2) Select your board: `Tools -> Board -> Wemos D1 R2 & mini`
+2) Select your board: `Tools -> Board -> LOLIN (WEMOS) D1 R2 & mini`
 
 3) In the Arduino IDE, open the ESP8266 blink example from
 `File -> Examples -> ESP8266 -> Blink`
 
 4) Upload the code (command-U / ctrl-U)
+
+5) Change the delay times (ex: remove a zero), the blue LED should blink at a different speed.
 
 
 ### TESTS
@@ -81,10 +79,10 @@ Procedure:
 
 1) Open `Tools -> Serial Monitor`, you should observe values
 
-2) Open `Tools -> Serial Plotter`  you should observe a graph of these values
+2) Open `Tools -> Serial Plotter`  you should observe a graph of these values (shake the accelerometer!)
 
 3) Challenge: modify the Serial.print(...) section to trace these values in ASCII
-(hint: use the measured value in a "for loop")
+(hint: amplify the measured value in a "for loop")
 
 
 #### Communicating
@@ -103,9 +101,9 @@ login/password, your IP address (look for `IPAddress outIp(192.168...)`), and up
 3) Open the Processing sketch in `1_tests/b_communication` and run it
 (command-R / ctrl-R)
 
-4) Observe the displayed values in the debug part of Processing
+4) If both your computer and the Wemos are connected to the same network, some values should appear in the console part of Processing (black background), they actually came by WiFi!
 
-5) Challenge: send a String message over OSC and print it (see documentation section below)
+5) Optional challenge: send a String message from the Wemos over OSC and print it in the console (see documentation section below)
 
 
 ### VISUALIZATION
@@ -113,14 +111,14 @@ login/password, your IP address (look for `IPAddress outIp(192.168...)`), and up
 
 Now that we can sense and communicate, let's use the data!
 
-0) As earlier, open the Arduino file in the `2_play` folder, put your WiFi
+0) As earlier, open the *Arduino* file in the `2_play` folder, put your WiFi
 login/password, your IP address, and upload...
 
-1) Open the Processing sketch in the `2_play` folder and run it, now you know...
+1) Open the *Processing* sketch in the `2_play` folder and run it, now you know...
 
 2) Challenge: make it your own, change the color, the speed, or the entire visualization!
 
-Note: the visualization is derived from the work by Andreas Schlegel, you can find more example here:
+Credit: the visualization is derived from the work by Andreas Schlegel, more info here:
 
 [github.com/sojamo/Movement-of-Things](https://github.com/sojamo/Movement-of-Things)
 
@@ -152,6 +150,8 @@ Note: the visualization is derived from the work by Andreas Schlegel, you can fi
 - [wekinator.org](http://www.wekinator.org)
 
 - [nickgillian.com/wiki/pmwiki.php/GRT/GestureRecognitionToolkit](http://www.nickgillian.com/wiki/pmwiki.php/GRT/GestureRecognitionToolkit)
+
+- [Example-based Sensor Predictions](https://github.com/damellis/ESP)
 
 #### Play with the ESP8266 examples!
 
